@@ -1,0 +1,133 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+    background-color: #1e1e1e;
+    color: #fefdf9;
+}
+section{
+    background-color: #db042b;
+    border-radius: 2.5em;
+
+
+}
+.inicio{
+    display: flex;
+    margin: 2.5em;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+
+}
+h1{
+    font-size: 1.8em;
+}
+input{
+    text-decoration: none;
+    font-family: monospace;
+    height: 2em;
+    border-radius: 2em;
+    text-align: center;
+    padding: auto;
+}
+/*inicio de pokedex*/
+.container_pokedex{
+    display: flex;
+    background-color:#8c8c8c ;
+    width: 30em;
+    height: 57.5em;
+    flex-direction: column;
+    border:2em  #4a4a4a solid;
+    border-radius: 2em;
+
+}
+.contaniner_pokedex_screen{
+    height: 27em;
+    background-color: #393939;
+    margin: 1.5em;
+    border: .5em #292929 solid;
+    border-radius: 5px;
+}
+.container_pokedex_screen-img1{
+    /*background-color: #1e1e1e;*/
+    background-color: #1e1e1e;
+    height: 10.5em;
+    margin: 2em;
+    margin-bottom: 2.5em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_pokedex_screen-img2{
+    /*background-color: #1e1e1e;*/
+    background-color: #1e1e1e;
+    height: 10.5em;
+    margin: 2em;
+    margin-top: 2.5em;
+    border-radius: 5px;
+}
+.poke_img{
+   height: 8em;
+   width:auto;
+
+}
+/* body - decoracion */
+.container_pokedex_body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:26em ;
+}
+.ciruclo_contorno{
+    width: 26em;
+    height: 26em;
+    border-radius: 50%;
+    background: #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo {
+    width: 23em;
+    height: 23em;
+    border-radius: 50%;
+    background: #db042b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo_raya{
+    position: absolute;
+    width: 23em;
+    height: 5em;
+    background-color: #393939;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+.circulo_contorno_button{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: #393939;
+    border: 5px #292929 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.circulo_button{
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    background: #fefdf9;
+    border: 5px #292929 solid;
+    z-index: 6;
+ 
+}
+.circulo_button:hover{
+    background-color: #db042b;
+}
