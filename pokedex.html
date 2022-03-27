@@ -9,23 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap" rel="stylesheet">
+    <script src="pokeapi.js" defer></script>
     <title>Pokedex</title>
 </head>
 <body>
     <section class="inicio">
         <h1>Pokedex LaunchX🚀</h1>
         <img src="https://media4.giphy.com/media/NS7gPxeumewkWDOIxi/200.gif" alt="Investigar pokemones">
-        <h2>Busca aqui tu pokémon favorito🔎 </h2> <input type="text" placeholder="pikachu" name="" id="">
-
+        <h2>Busca aqui tu pokémon favorito🔎 </h2> <input type="text" placeholder="pikachu" name="pokeName" id="pokeName" autocomplete="off">
     </section>
+    <div class="space"></div>
     <section class="container_pokedex">
         <div class="contaniner_pokedex_screen">
-            <div class="container_pokedex_screen-img1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="pokedex" class="poke_img">
+            <div data-poke-name class="pokedex ">Pokedex.</div>
+            <div data-poke-img-container class="container_pokedex_screen-img1">
+                <img  data-poke-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="pokedex" class="poke_img" id="pokeImg" name="pokeImg">
             </div>
             <div class="container_pokedex_screen-img2">
-                <div></div>
-                <img src="https://media2.giphy.com/media/DRfu7BT8ZK1uo/200.gif ddd" alt="what is the pokemon" class="poke_img">
+                <div data-poke-id=""></div>
+                <div data-poke-types class="container_pokedex_screen-img2-types"></div>
+                <div data-poke-stats class="container_pokedex_screen-img2-stats"></div>
             </div>
         </div>
         <div class="container_pokedex_body">
@@ -33,15 +36,11 @@
                 <div class="circulo">
                     <div class="circulo_raya"></div>
                     <div class="circulo_contorno_button">
-                        <button class="circulo_button">
-                        </button>
+                        <button class="circulo_button" onclick="searchPokemon(event)"></button>
                     </div>
                 </div>
              </div>
         </div> 
     </section>
 </body>
-<footer>
-    <script src=""></script>
-</footer>
 </html>
